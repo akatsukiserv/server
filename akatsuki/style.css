@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.center{
+    max-width:  1300px;
+    margin: auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+header{
+    background-color: white;
+    padding: 25px 0;
+    /*border-bottom: 10px solid rgb(204, 200, 200);*/
+
+}
+
+.logos{
+    color: rgba(42, 139, 193, 25);
+    margin: 15px 0;
+    margin-right: 160px;
+}
+
+.logos h2 {
+    font-weight: normal;
+    font-size:  25px;
+}
+
+.menu{
+    width:  70%;
+    text-align: right;
+    margin: 15px 0;
+
+}
+
+.menu a{
+    color: #124265
+    font-size 15px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 25px;
+    transition: 0.6s; 
+}
+
+.menu a:hover {
+    color:  #007bff;
+
+}
+
+.menu .botao {
+    background-color: rgba(42, 139, 193);
+    display: inline-block;
+    padding: 7px 50px;
+    border-radius: 9px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu .botao:hover{
+    background-color: #2371a8;
+    color: white;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------main------------------------------------------------- */
+
+section.main{
+    background-image: url('/E32-U9WXEAMjdgQ.png');
+
+    padding: 80px 0;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main_cta{
+    width: 100%;
+    text-align: center;
+    
+}
+.main_cta h2 {
+    color: rgba(42, 139, 193);
+    font-size: 40px;
+    margin: 1px;
+    background-color: rgba(255, 255, 255, 0.700);
+    border-radius: 10px;
+    padding: 7px 6px;
+    border-radius: 300 px;
+}
+
+
+.main_cta p {
+    color: rgb(255, 255, 255);
+    font-size:  19px;
+    margin: 10px 0;
+}
+
+.main_cta botton {
+    background-color: rgba(42, 139, 193);
+    display: inline-block;
+    padding: 10px 70px;
+    border-radius: 9px;
+    color: white;
+    border-radius: 6px;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 150px;
+}
+
+.diferencas{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+ 
+}
+
+.diferencial{
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.750);
+    width: 23%;
+    margin-right: 2%;
+    padding: 50px 20px;
+    margin-bottom: 50px;
+}
+
+.diferencial i{
+    color: #124265;
+    font-size: 23px;
+
+}
+
+.diferencial h2{
+    color: #124265;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.diferencial p{
+    font-size: 15px;
+    color: gray;
+    line-height: 30px;
+
+}
+
+.diferencial a{
+    display: flex;
+  
+}
+section.sobre {
+    padding: 80px 0;
+}
+
+.chamada{
+    width: 100%;
+    text-align: center;
+
+}
+
+.chamada h2{
+    color: #124265;
+}
+
+.chamada p{
+    font-size: 15px;
+    color: gray;
+    margin: 10px;
+}
+
+.conteudo{
+    display: flex;
+    
+    flex-wrap: wrap;
+   
+}
+
+.conteudo p{
+    display: flex;
+    color: #444;
+    width: 48%;
+    margin-right: 2%;
+    margin-top: 15px;
+}
+
+.conteudo a{
+    background-color: rgb(42, 139, 193);
+    display: flex;
+    padding: 12px 12px;
+    border-radius: 9px;
+    color: white;
+    border-radius: 6px;
+    font-size: 10px;
+    border: 0;
+    cursor: pointer;
+    margin-left: 50%;
+}
+
+section.conquistas{
+    background-color: rgb(212, 212, 214);
+    padding:50px 0;
+    flex-wrap: wrap;
+
+}
+
+.conquista{
+    width: 22%;
+    margin-right: 35px;
+    margin: 10px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+.conquista h2{
+    font-size:  30px;
+    color: #124265;
+}
+
+.conquista p {
+font-size: 15px;
+}
+
+
+
+.menu-items{
+    position: absolute;
+    left: 0;
+    top: 90px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-bottom: 2px solid blue;
+    display: block;
+    opacity: 0;
+    transition: 1s;
+}
+
+.menu-items.show{
+    opacity: 1;
+}
+
+.menu-items.hide{
+    opacity: 0;
+}
+
+.menu-items a{
+    display: block;
+    text-decoration: none;
+    color: blue;
+}
+
+section.team{
+    display: flex;
+    padding: 40px 0;
+    margin-right: 0;
+    margin-left:350px;
+    
+}
+
+section.team .habi{
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.habi h2{
+    color: #124265;
+
+}
+
+.habi p{
+    color: #ccc;
+    margin:  10px 0;
+    font-size: 14px;
+    
+}
+
+.center-box{
+    display: block;
+    margin-top: 30px;
+    padding: 60px;
+    text-align: center;
+    margin: auto;
+    margin-left:-20px;
+}
+
+.photo{
+
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+max-width: 800px;
+margin: 0 auto;
+
+}
+
+.admin{
+    display: inline-block;
+    margin-left: 25px;
+    margin-bottom: 300px;
+    width: 300px;
+    height: 100px;
+    flex: 1 1 200px;
+    
+}
+
+.admin img{
+    max-width: 100%;
+    display: block;
+}
+
+.png{
+    background-image: url(/texture-g02a3dce74_1920.jpg);
+    padding: 150px 0;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.scrip{
+    
+    margin-left: 200px;
+    
+}
+
+.rodae{
+    display: flex;
+    filter: none;
+}
+
+.scrip p{
+    font-size: 20px;
+    
+}
+
+@media screen and (max-width: 800px){
+
+    
+    .logos{
+        margin-left: 25px;
+    }
+    
+    .diferencial{width: 100%;
+    margin-bottom: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    .logos{
+        width: 20%;
+    }
+    .menu-mobile{
+        width: 90%; 
+        text-align: right;
+        margin-top: -52px;
+        display: block;
+    }
+
+    .menu-mobile a{
+        padding: 15px;
+    }
+
+    .menu-mobile i{
+        cursor: pointer;
+        font-size: 23px;
+        margin-top: 8px;
+    }
+    .conteudo {width: 100%; margin: 20px 20px;}
+
+    .conquista{
+        margin: 50px;
+    }
+
+    .scrip{
+        margin-left: 20px;
+    }
+}
